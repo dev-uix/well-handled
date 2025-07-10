@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
 
   const scrollTop = window.pageYOffset;
   // Adjust the speed factor (0.5 here means half the scroll speed)
-  const offset = scrollTop * 0.8;
+  const offset = scrollTop * 0.5;
 
   // Set the background-position Y based on scroll offset
   parallax.style.backgroundPosition = `center ${-offset}px`;
