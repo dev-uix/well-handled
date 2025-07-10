@@ -142,7 +142,7 @@ section.visible {
   border-radius: 10px;
 }
 
-.parallax {
+/*.parallax {
   position: relative;
   height: 25vh;
   overflow: hidden;
@@ -152,7 +152,7 @@ section.visible {
   color: white;
   background-color: #fff;
   background-image: url('../images/parallax.jpg'); /* Adjust path */
-  background-size: cover;
+  /*background-size: cover;
   background-position: center top;
   will-change: background-position;
   transition: background-position 0.1s ease-out;
@@ -165,10 +165,10 @@ section.visible {
   font-size: 2rem;
   padding: 0 1rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
+}*/
 
 #gallery {
-  background-color: var(--white);
+  background-color: #f4f2ef;
   padding: 4rem 2rem;
 }
 
@@ -200,7 +200,7 @@ section.visible {
 /*--Price Cards--*/
 
 #pricing {
-  background-color: #f9f9f9;
+  background-color: #f4f2ef;
   padding: 4rem 2rem;
   text-align: center;
 }
