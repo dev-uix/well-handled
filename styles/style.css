@@ -40,7 +40,7 @@ header {
   color: var(--white);
   padding: 2rem;
   text-align: center;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 header::before {
@@ -140,6 +140,33 @@ section.visible {
   border: 1px solid #eae4db;
   padding: 1.5rem;
   border-radius: 10px;
+}
+
+.parallax {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0) scale(1.1); /* subtle zoom */
+  z-index: 0;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 20vh;
+  font-size: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 #gallery {
