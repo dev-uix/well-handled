@@ -10,3 +10,17 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
   observer.observe(section);
 });
+
+/*--Parallax--*/
+
+window.addEventListener('scroll', () => {
+  const parallax = document.querySelector('.parallax');
+  if (!parallax) return;
+
+  const scrollTop = window.pageYOffset;
+  // Adjust the speed factor (0.5 here means half the scroll speed)
+  const offset = scrollTop * 0.8;
+
+  // Set the background-position Y based on scroll offset
+  parallax.style.backgroundPosition = `center ${-offset}px`;
+});
