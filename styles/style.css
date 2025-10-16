@@ -305,6 +305,26 @@ section.visible {
   margin-top: 1rem;
 }
 
+/* Contact link — simple */
+#contact a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+#contact a:visited {
+  color: var(--navy); /* avoid browser default purple */
+}
+
+#contact a:hover,
+#contact a:focus,
+#contact a:focus-visible {
+  color: var(--mustard);
+  outline: none;
+  text-decoration: none;
+}
+
 /*Scroll to Top*/
 #scrollToTop {
   position: fixed;
